@@ -1,28 +1,30 @@
 import random
 
-fh = open('passowrd.txt', 'w')
+fh = open('passwords.txt', 'w')
 chars = 'ABCDEFGHIJKLOMPQRSTUVWXYZabcdefghijklomnpqrstuvwxyz1234567890~!@#$%^&*()_+?<>-'
 
-websitename = ''
-username = ''
-
 length = input('gennerated password length:')
-length = int(length)
+
+
 websitename = input('Website for password')
 username = input('Username')
 
-fh.write('Website: ' websitename '/n')
-fh.write('Username: ' username '/n')
+fh.write('WebsiteName: ')
+fh.write(websitename)
+fh.write('\n')
+fh.write('Username: ')
+fh.write(username)
+fh.write('\n')
 
 # passwords = input('amount of passwords to geenerate:')
-# passwords = int(passwords)
+length = int(length)
 
 # for p in range(passwords):
 password = ''
-  for c in range(length):
-    password += random.choice(chars)
-  print(password)
-  fh.write('Password:' password '/n'
 
-fh.write('/n')  
+for c in range(length):
+  password += random.choice(chars)
+
+fh.write('Password: ')
+fh.write(password)
 fh.close()
