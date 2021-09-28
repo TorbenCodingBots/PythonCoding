@@ -1,4 +1,3 @@
-#!/bin/python3
 import random
 
 chars = 'ABCDEFGHIJKLOMPQRSTUVWXYZabcdefghijklomnpqrstuvwxyz1234567890~!@#$%^&*()_+?<>-'
