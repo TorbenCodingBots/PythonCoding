@@ -3,6 +3,9 @@ import random
 fh = open('passowrd.txt', 'w')
 chars = 'ABCDEFGHIJKLOMPQRSTUVWXYZabcdefghijklomnpqrstuvwxyz1234567890~!@#$%^&*()_+?<>-'
 
+websitename = ''
+username = ''
+
 length = input('gennerated password length:')
 length = int(length)
 websitename = input('Website for password')
